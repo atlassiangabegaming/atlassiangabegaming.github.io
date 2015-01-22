@@ -11,7 +11,9 @@ $(function() {
     var audioReady = false;
 
     // The carefully, lovingly determined percentages which his holiness removes from the prices of his products.
-    var STEAM_SALES = [10, 25, 33, 50, 66, 75, 80, 90]
+    //var STEAM_SALES = [10, 25, 33, 50, 66, 75, 80, 90]
+    // THERE ARE NO DISCOUNTS
+    var COMPANY_VALUES = ['iCompanyValueBalance.png', 'iCompanyValueChange.png', 'iCompanyValueCustomer.png', 'iCompanyValueNoBull.png', 'iCompanyValueTeam.png'];
 
     // lolsorandom
     var randomChoice = function(list) {
@@ -38,11 +40,11 @@ $(function() {
             var pageWidth = $('body').width();
             var maxSales = (pageWidth/70)*5
             var xPos = getRandomInt(0, pageWidth);
-            var percentOff = randomChoice(STEAM_SALES);
+            var companyValue = randomChoice(COMPANY_VALUES);
             // Just copy the hidden box we had at page load time to make a new box.
             var newSale = $saleBox.clone().show();
 
-            newSale.text("-" + percentOff + "%"); // >js >strings
+            newSale.find('img')[0].src = '/static/img/' + companyValue; // >js >strings
 
             newSale.css("left", xPos);
             $('body').append(newSale);
