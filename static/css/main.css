@@ -2,7 +2,6 @@ body {
     margin: 0;
     overflow-x: hidden;
     overflow-y: hidden;
-    height: 100%;
 }
 
 iframe {
@@ -16,7 +15,7 @@ iframe {
 
 div.gag-animation{
     position: absolute;
-    top: 0px;
+    bottom: 0px;
     left: 0px;
     z-index: 10;
     pointer-events: none;
@@ -40,8 +39,8 @@ div.sale-box {
     pointer-events: none;
     color: #ffffff;
 
-    -webkit-animation: sale infinite 2s;
-    animation: sale infinite 2s;
+    -webkit-animation: sale infinite 4s;
+    animation: sale infinite 4s;
 
     will-change: top, opacity;
   }
@@ -50,18 +49,18 @@ div.sale-box {
 @-webkit-keyframes moveIn {
     0% {
         -webkit-transform: scale(0.2,0.2);
-        top: 100%;
+        bottom: -100%;
     }
     100% {
         -webkit-transform: scale(1,1);
-        top: 0%;
+        bottom: 0%;
     }
 
 }
 @-webkit-keyframes sale {
     0% {
         opacity: 1;
-        top: 0%;
+        top: -20%;
     }
     70% {
         opacity: 0.7;
@@ -146,9 +145,9 @@ div.sale-box {
 
 .sunburst {
     position: absolute;
-    z-index: -1;
-    bottom:-10%;
-    right: -60%;
+    z-index: 1;
+    bottom: -100%;
+    right: 0%;
 }
 
 .sunburst .outer {

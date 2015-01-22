@@ -80,7 +80,7 @@ $(function() {
         $audio.trigger('play');
         window.setTimeout(
                 function() {
-                    $('div.sunburst').fadeIn(4000);
+                    $('.sunburst').fadeIn(4000);
                 }
                 , 8000)
     }
