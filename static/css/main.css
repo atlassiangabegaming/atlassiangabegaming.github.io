@@ -148,6 +148,7 @@ div.sale-box {
     z-index: 1;
     bottom: -100%;
     right: 0%;
+    pointer-events: none;
 }
 
 .sunburst .outer {
