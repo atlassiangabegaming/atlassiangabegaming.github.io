@@ -1,7 +1,4 @@
-PRAISE TO BE GABEN
+PRAISE TO OUR GLORIOUS FOUNDERS
 =========================
-Welcome to gabegaming.com your home for gags and gabes.
+"Made with love" by your newest, up-and-coming grads, Alex and Blake
 
-"Made with love" by [@_notlikethis](http://twitter.com/_notlikethis) and [@RakeDodgers](http://twitter.com/RakeDodgers).
-
-Inspired by http://gaben.tv/
