@@ -159,6 +159,7 @@ div.sale-box {
    -webkit-animation: rotate_sunburst 2s infinite linear;
    animation: rotate_sunburst 2s infinite linear;
    will-change: transform;
+   pointer-events: none;
 }
 
 .sunburst b {
